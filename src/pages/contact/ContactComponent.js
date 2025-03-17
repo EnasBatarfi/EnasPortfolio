@@ -12,8 +12,8 @@ import { greeting, contactPageData } from "../../portfolio.js";
 import ContactForm from "./ContactForm.js";
 
 const ContactData = contactPageData.contactSection;
-const blogSection = contactPageData.blogSection;
-const addressSection = contactPageData.addressSection;
+// const blogSection = contactPageData.blogSection;
+// const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
