@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport { Doughnut } from \"react-chartjs-2\";\nimport { Fade } from \"react-reveal\";\nimport \"./PullRequestChart.css\";\nimport PullRequestData from \"../../shared/opensource/pull_requests.json\";\nclass PullRequestChart extends Component {\n  render() {\n    const data = {\n      labels: [\"Open\", \"Merged\", \"Closed\"],\n      datasets: [{\n        data: [PullRequestData[\"open\"], PullRequestData[\"merged\"], PullRequestData[\"closed\"]],\n        backgroundColor: [\"#28a745\", \"#6f42c1\", \"#d73a49\"],\n        hoverBackgroundColor: [\"#28a745dd\", \"#6f42c1dd\", \"#d73a49dd\"]\n      }]\n    };\n    return __jsx(\"div\", {\n      className: \"pr-chart\"\n    }, __jsx(Fade, {\n      bottom: true,\n      duration: 2000,\n      distance: \"20px\"\n    }, __jsx(\"h2\", {\n      className: \"pr-chart-header\"\n    }, \"Pull Request Distribution\")), __jsx(Doughnut, {\n      data: data,\n      options: {\n        padding: \"0\",\n        margin: \"0\",\n        responsive: true,\n        maintainAspectRatio: true,\n        animation: {\n          duration: 4000\n        }\n      }\n    }));\n  }\n}\nexport default PullRequestChart;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

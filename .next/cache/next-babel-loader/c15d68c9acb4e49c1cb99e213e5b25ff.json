@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport \"./Educations.css\";\nimport DegreeCard from \"../../components/degreeCard/DegreeCard.js\";\nimport { degrees } from \"../../portfolio\";\nimport { Fade } from \"react-reveal\";\nclass Educations extends Component {\n  render() {\n    const theme = this.props.theme;\n    return __jsx(\"div\", {\n      className: \"main\",\n      id: \"educations\"\n    }, __jsx(\"div\", {\n      className: \"educations-header-div\"\n    }, __jsx(Fade, {\n      bottom: true,\n      duration: 2000,\n      distance: \"20px\"\n    }, __jsx(\"h1\", {\n      className: \"educations-header\",\n      style: {\n        color: theme.text\n      }\n    }, \"Degrees Received\"))), __jsx(\"div\", {\n      className: \"educations-body-div\"\n    }, degrees.degrees.map(degree => {\n      return __jsx(DegreeCard, {\n        degree: degree,\n        theme: theme\n      });\n    })));\n  }\n}\nexport default Educations;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

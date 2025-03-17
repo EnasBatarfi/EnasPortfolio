@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport \"./PullRequests.css\";\nimport { Fade } from \"react-reveal\";\nimport PullRequestCard from \"../../components/pullRequestCard/PullRequestCard\";\nimport pullRequestsData from \"../../shared/opensource/pull_requests.json\";\nclass PullRequests extends Component {\n  render() {\n    const theme = this.props.theme;\n    return __jsx(\"div\", null, __jsx(\"div\", {\n      className: \"pull-requests-header-div\"\n    }, __jsx(Fade, {\n      bottom: true,\n      duration: 2000,\n      distance: \"20px\"\n    }, __jsx(\"h1\", {\n      className: \"pull-requests-header\",\n      style: {\n        color: theme.text\n      }\n    }, \"Pull Requests\"))), __jsx(\"div\", {\n      className: \"pull-request-body-div\"\n    }, pullRequestsData[\"data\"].map(pullRequest => {\n      return __jsx(PullRequestCard, {\n        pullRequest: pullRequest\n      });\n    })));\n  }\n}\nexport default PullRequests;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

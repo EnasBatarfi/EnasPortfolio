@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from \"react\";\nimport \"./CompetitiveSites.css\";\nimport { OverlayTrigger, Tooltip } from \"react-bootstrap\";\nclass CompetitiveSites extends React.Component {\n  render() {\n    return __jsx(\"div\", {\n      className: \"competitive-sites-main-div\"\n    }, __jsx(\"ul\", {\n      className: \"dev-icons\"\n    }, this.props.logos.map(logo => {\n      return __jsx(OverlayTrigger, {\n        key: logo.siteName,\n        placement: \"top\",\n        style: {\n          marginBottom: \"5px\"\n        },\n        overlay: __jsx(Tooltip, {\n          id: `tooltip-top`\n        }, __jsx(\"strong\", null, logo.siteName))\n      }, __jsx(\"li\", {\n        className: \"competitive-sites-inline\",\n        name: logo.siteName\n      }, __jsx(\"a\", {\n        href: logo.profileLink,\n        target: \"_blank\",\n        rel: \"noopener noreferrer\"\n      }, __jsx(\"span\", {\n        className: \"iconify\",\n        \"data-icon\": logo.iconifyClassname,\n        style: logo.style,\n        \"data-inline\": \"false\"\n      }))));\n    })));\n  }\n}\nexport default CompetitiveSites;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

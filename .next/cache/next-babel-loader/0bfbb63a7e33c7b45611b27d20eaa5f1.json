@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport { NewSkillsData } from \"./NewSkillsData\";\nimport { NewSkillsImage } from \"./NewSkillsImage\";\nimport Marquee from \"react-fast-marquee\";\nimport React from \"react\";\nimport \"./NewSkills.css\"; // Import the new CSS file\n\nfunction NewSkills() {\n  return __jsx(\"div\", {\n    className: \"new-skills-container\",\n    id: \"skills\"\n  }, __jsx(\"div\", null, __jsx(\"h2\", {\n    className: \"new-skills-title\"\n  }, \"Skills\")), __jsx(\"div\", {\n    className: \"new-skills-grid\"\n  }, __jsx(Marquee, {\n    gradient: false,\n    speed: 80,\n    pauseOnHover: true,\n    pauseOnClick: true\n  }, NewSkillsData.map((skill, id) => {\n    const skillImage = NewSkillsImage(skill);\n    const imageSrc = skillImage;\n    return __jsx(\"div\", {\n      key: id,\n      className: \"new-skills-item\"\n    }, __jsx(\"img\", {\n      src: imageSrc,\n      alt: skill\n    }), __jsx(\"p\", null, skill));\n  }))));\n}\nexport default NewSkills;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

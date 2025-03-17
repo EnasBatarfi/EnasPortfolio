@@ -1,0 +1,23 @@
+{
+  "ast": null,
+  "code": "\"use strict\";\n\nexports.__esModule = true;\nexports.default = getAssetPathFromRoute; // Translates a logical route into its pages asset path (relative from a common prefix)\n// \"asset path\" being its javascript file, data file, prerendered html,...\nfunction getAssetPathFromRoute(route, ext = '') {\n  const path = route === '/' ? '/index' : /^\\/index(\\/|$)/.test(route) ? `/index${route}` : `${route}`;\n  return path + ext;\n}",
+  "map": {
+    "version": 3,
+    "sources": [
+      "../../../../../next-server/lib/router/utils/get-asset-path-from-route.ts"
+    ],
+    "names": [
+      "getAssetPathFromRoute",
+      "route",
+      "ext",
+      "path",
+      "test"
+    ],
+    "mappings": ";;;wCAAA;AACA;AACe,SAASA,qBAAT,CACbC,KADa,EAEbC,GAAW,GAAG,EAFD,EAGL;EACR,MAAMC,IAAI,GACRF,KAAK,KAAK,GAAVA,GACI,QADJA,GAEI,gBAAA,CAAiBG,IAAjB,CAAsBH,KAAtB,CAAA,GACC,SAAQA,KAAM,EADf,GAEC,GAAEA,KAAM,EALf;EAMA,OAAOE,IAAI,GAAGD,GAAd;AACD",
+    "sourcesContent": [
+      "// Translates a logical route into its pages asset path (relative from a common prefix)\n// \"asset path\" being its javascript file, data file, prerendered html,...\nexport default function getAssetPathFromRoute(\n  route: string,\n  ext: string = ''\n): string {\n  const path =\n    route === '/'\n      ? '/index'\n      : /^\\/index(\\/|$)/.test(route)\n      ? `/index${route}`\n      : `${route}`\n  return path + ext\n}\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}

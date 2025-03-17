@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport \"./ProjectLanguages.css\";\nimport { OverlayTrigger, Tooltip } from \"react-bootstrap\";\nclass ProjectLanguages extends Component {\n  render() {\n    return __jsx(\"div\", null, __jsx(\"div\", {\n      className: \"software-skills-main-div\"\n    }, __jsx(\"ul\", {\n      className: \"dev-icons-languages\"\n    }, this.props.logos.map(logo => {\n      return __jsx(OverlayTrigger, {\n        key: logo.name,\n        placement: \"top\",\n        overlay: __jsx(Tooltip, {\n          id: `tooltip-top`\n        }, __jsx(\"strong\", null, logo.name))\n      }, __jsx(\"li\", {\n        className: \"software-skill-inline-languages\",\n        name: logo.skillName\n      }, __jsx(\"span\", {\n        className: \"iconify\",\n        \"data-icon\": logo.iconifyClass,\n        \"data-inline\": \"false\"\n      })));\n    }))));\n  }\n}\nexport default ProjectLanguages;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

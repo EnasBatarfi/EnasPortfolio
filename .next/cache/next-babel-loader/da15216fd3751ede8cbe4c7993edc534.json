@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport \"./OrganizationList.css\";\nimport { OverlayTrigger, Tooltip } from \"react-bootstrap\";\nimport { Fade } from \"react-reveal\";\nclass OrganizationList extends Component {\n  render() {\n    return __jsx(\"div\", {\n      className: \"organizations-main-div\"\n    }, __jsx(\"ul\", {\n      className: \"dev-icons-orgs\"\n    }, this.props.logos.map(logo => {\n      return __jsx(OverlayTrigger, {\n        key: logo[\"login\"],\n        placement: \"top\",\n        style: {\n          marginBottom: \"5px\"\n        },\n        overlay: __jsx(Tooltip, {\n          id: `tooltip-top`\n        }, __jsx(\"strong\", null, logo[\"login\"]))\n      }, __jsx(\"li\", {\n        className: \"organizations-inline\",\n        name: logo[\"login\"]\n      }, __jsx(Fade, {\n        bottom: true,\n        duration: 2000,\n        distance: \"40px\"\n      }, __jsx(\"img\", {\n        className: \"organizations-img\",\n        src: logo[\"avatarUrl\"],\n        alt: logo[\"login\"]\n      }))));\n    })));\n  }\n}\nexport default OrganizationList;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport { Doughnut } from \"react-chartjs-2\";\nimport { Fade } from \"react-reveal\";\nimport \"./IssueChart.css\";\nimport IssueData from \"../../shared/opensource/issues.json\";\nclass IssueChart extends Component {\n  render() {\n    const data = {\n      labels: [\"Open\", \"Closed\"],\n      datasets: [{\n        data: [IssueData[\"open\"], IssueData[\"closed\"]],\n        backgroundColor: [\"#28a745\", \"#d73a49\"],\n        hoverBackgroundColor: [\"#28a745dd\", \"#d73a49dd\"]\n      }]\n    };\n    return __jsx(\"div\", {\n      className: \"issue-chart\"\n    }, __jsx(Fade, {\n      bottom: true,\n      duration: 2000,\n      distance: \"20px\"\n    }, __jsx(\"h2\", {\n      className: \"issue-chart-header\"\n    }, \"Issue Distribution\")), __jsx(Doughnut, {\n      data: data,\n      options: {\n        margin: \"0\",\n        padding: \"0\",\n        responsive: true,\n        maintainAspectRatio: true,\n        animation: {\n          duration: 4000\n        }\n      }\n    }));\n  }\n}\nexport default IssueChart;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

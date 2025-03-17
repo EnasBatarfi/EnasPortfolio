@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from \"react\";\nimport \"./Button.css\";\nconst onMouseEnter = (event, color, bgColor) => {\n  const el = event.target;\n  el.style.color = color;\n  el.style.backgroundColor = bgColor;\n};\nconst onMouseOut = (event, color, bgColor) => {\n  const el = event.target;\n  el.style.color = color;\n  el.style.backgroundColor = bgColor;\n};\nexport default function Button(_ref) {\n  let {\n    text,\n    className,\n    href,\n    newTab,\n    theme\n  } = _ref;\n  return __jsx(\"div\", {\n    className: className\n  }, __jsx(\"a\", {\n    className: \"main-button\",\n    href: href,\n    target: newTab && \"_blank\",\n    style: {\n      color: theme.body,\n      backgroundColor: theme.text,\n      border: `solid 1px ${theme.text}`\n    },\n    onMouseEnter: event => onMouseEnter(event, theme.text, theme.body),\n    onMouseOut: event => onMouseOut(event, theme.body, theme.text)\n  }, text));\n}",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

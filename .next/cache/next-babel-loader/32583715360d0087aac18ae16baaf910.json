@@ -1,0 +1,34 @@
+{
+  "ast": null,
+  "code": "\"use strict\";\n\nexports.__esModule = true;\nexports.default = void 0;\nvar _react = require(\"react\");\nconst isServer = false;\nclass _default extends _react.Component {\n  constructor(props) {\n    super(props);\n    this._hasHeadManager = void 0;\n    this.emitChange = () => {\n      if (this._hasHeadManager) {\n        this.props.headManager.updateHead(this.props.reduceComponentsToState([...this.props.headManager.mountedInstances], this.props));\n      }\n    };\n    this._hasHeadManager = this.props.headManager && this.props.headManager.mountedInstances;\n    if (isServer && this._hasHeadManager) {\n      this.props.headManager.mountedInstances.add(this);\n      this.emitChange();\n    }\n  }\n  componentDidMount() {\n    if (this._hasHeadManager) {\n      this.props.headManager.mountedInstances.add(this);\n    }\n    this.emitChange();\n  }\n  componentDidUpdate() {\n    this.emitChange();\n  }\n  componentWillUnmount() {\n    if (this._hasHeadManager) {\n      this.props.headManager.mountedInstances.delete(this);\n    }\n    this.emitChange();\n  }\n  render() {\n    return null;\n  }\n}\nexports.default = _default;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "../../../next-server/lib/side-effect.tsx"
+    ],
+    "names": [
+      "isServer",
+      "Component",
+      "_hasHeadManager",
+      "emitChange",
+      "props",
+      "headManager",
+      "updateHead",
+      "reduceComponentsToState",
+      "mountedInstances",
+      "constructor",
+      "add",
+      "componentDidMount",
+      "componentDidUpdate",
+      "componentWillUnmount",
+      "delete",
+      "render"
+    ],
+    "mappings": ";;;;AAAA,IAAA,MAAA,GAAA,OAAA,CAAA,OAAA,CAAA;AAEA,MAAMA,QAAQ,QAAd;AAce,MAAA,QAAA,SAAcC,MAAAA,CAAAA,SAA2B;EActDQ,WAAW,CAACL,KAAD,EAAa;IACtB,KAAA,CAAMA,KAAN,CAAA;IADsB,IAAA,CAbhBF,eAagB,GAAA,KAAA,CAAA;IAAA,IAAA,CAXxBC,UAWwB,GAXX,MAAY;MACvB,IAAI,IAAA,CAAKD,eAAT,EAA0B;QACxB,IAAA,CAAKE,KAAL,CAAWC,WAAX,CAAuBC,UAAvB,CACE,IAAA,CAAKF,KAAL,CAAWG,uBAAX,CACE,CAAC,GAAG,IAAA,CAAKH,KAAL,CAAWC,WAAX,CAAuBG,gBAA3B,CADF,EAEE,IAAA,CAAKJ,KAFP,CADF,CAAA;MAMD;IACF,CAEuB;IAEtB,IAAA,CAAKF,eAAL,GACE,IAAA,CAAKE,KAAL,CAAWC,WAAX,IAA0B,IAAA,CAAKD,KAAL,CAAWC,WAAX,CAAuBG,gBADnD;IAGA,IAAIR,QAAQ,IAAI,IAAA,CAAKE,eAArB,EAAsC;MACpC,IAAA,CAAKE,KAAL,CAAWC,WAAX,CAAuBG,gBAAvB,CAAwCE,GAAxC,CAA4C,IAA5C,CAAA;MACA,IAAA,CAAKP,UAAL,CAAA,CAAA;IACD;EACF;EACDQ,iBAAiB,CAAA,EAAG;IAClB,IAAI,IAAA,CAAKT,eAAT,EAA0B;MACxB,IAAA,CAAKE,KAAL,CAAWC,WAAX,CAAuBG,gBAAvB,CAAwCE,GAAxC,CAA4C,IAA5C,CAAA;IACD;IACD,IAAA,CAAKP,UAAL,CAAA,CAAA;EACD;EACDS,kBAAkB,CAAA,EAAG;IACnB,IAAA,CAAKT,UAAL,CAAA,CAAA;EACD;EACDU,oBAAoB,CAAA,EAAG;IACrB,IAAI,IAAA,CAAKX,eAAT,EAA0B;MACxB,IAAA,CAAKE,KAAL,CAAWC,WAAX,CAAuBG,gBAAvB,CAAwCM,MAAxC,CAA+C,IAA/C,CAAA;IACD;IACD,IAAA,CAAKX,UAAL,CAAA,CAAA;EACD;EAEDY,MAAM,CAAA,EAAG;IACP,OAAO,IAAP;EACD;AA1CqD",
+    "sourcesContent": [
+      "import React, { Component } from 'react'\n\nconst isServer = typeof window === 'undefined'\n\ntype State = JSX.Element[] | undefined\n\ntype SideEffectProps = {\n  reduceComponentsToState: <T>(\n    components: Array<React.ReactElement<any>>,\n    props: T\n  ) => State\n  handleStateChange?: (state: State) => void\n  headManager: any\n  inAmpMode?: boolean\n}\n\nexport default class extends Component<SideEffectProps> {\n  private _hasHeadManager: boolean\n\n  emitChange = (): void => {\n    if (this._hasHeadManager) {\n      this.props.headManager.updateHead(\n        this.props.reduceComponentsToState(\n          [...this.props.headManager.mountedInstances],\n          this.props\n        )\n      )\n    }\n  }\n\n  constructor(props: any) {\n    super(props)\n    this._hasHeadManager =\n      this.props.headManager && this.props.headManager.mountedInstances\n\n    if (isServer && this._hasHeadManager) {\n      this.props.headManager.mountedInstances.add(this)\n      this.emitChange()\n    }\n  }\n  componentDidMount() {\n    if (this._hasHeadManager) {\n      this.props.headManager.mountedInstances.add(this)\n    }\n    this.emitChange()\n  }\n  componentDidUpdate() {\n    this.emitChange()\n  }\n  componentWillUnmount() {\n    if (this._hasHeadManager) {\n      this.props.headManager.mountedInstances.delete(this)\n    }\n    this.emitChange()\n  }\n\n  render() {\n    return null\n  }\n}\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "script"
+}

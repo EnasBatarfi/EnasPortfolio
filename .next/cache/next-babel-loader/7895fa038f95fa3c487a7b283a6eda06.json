@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport Header from \"../../components/header/Header\";\nimport Footer from \"../../components/footer/Footer\";\nimport OpensourceCharts from \"../../containers/opensourceCharts/OpensourceCharts\";\nimport Organizations from \"../../containers/organizations/Organizations\";\nimport PullRequests from \"../../containers/pullRequests/PullRequests\";\nimport Issues from \"../../containers/issues/Issues\";\nimport TopButton from \"../../components/topButton/TopButton\";\nimport \"./Opensource.css\";\nclass Opensource extends Component {\n  render() {\n    return __jsx(\"div\", {\n      className: \"opensource-main\"\n    }, __jsx(Header, {\n      theme: this.props.theme\n    }), __jsx(Organizations, {\n      theme: this.props.theme\n    }), __jsx(OpensourceCharts, {\n      theme: this.props.theme\n    }), __jsx(PullRequests, {\n      theme: this.props.theme\n    }), __jsx(Issues, {\n      theme: this.props.theme\n    }), __jsx(Footer, {\n      theme: this.props.theme,\n      onToggle: this.props.onToggle\n    }), __jsx(TopButton, {\n      theme: this.props.theme\n    }));\n  }\n}\nexport default Opensource;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

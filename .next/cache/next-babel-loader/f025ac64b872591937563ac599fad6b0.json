@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "\"use strict\";\n\nexports.__esModule = true;\nexports.default = void 0;\nvar _react = require(\"react\");\nconst isServer = false;\nclass _default extends _react.Component {\n  constructor(props) {\n    super(props);\n    this._hasHeadManager = void 0;\n    this.emitChange = () => {\n      if (this._hasHeadManager) {\n        this.props.headManager.updateHead(this.props.reduceComponentsToState([...this.props.headManager.mountedInstances], this.props));\n      }\n    };\n    this._hasHeadManager = this.props.headManager && this.props.headManager.mountedInstances;\n    if (isServer && this._hasHeadManager) {\n      this.props.headManager.mountedInstances.add(this);\n      this.emitChange();\n    }\n  }\n  componentDidMount() {\n    if (this._hasHeadManager) {\n      this.props.headManager.mountedInstances.add(this);\n    }\n    this.emitChange();\n  }\n  componentDidUpdate() {\n    this.emitChange();\n  }\n  componentWillUnmount() {\n    if (this._hasHeadManager) {\n      this.props.headManager.mountedInstances.delete(this);\n    }\n    this.emitChange();\n  }\n  render() {\n    return null;\n  }\n}\nexports.default = _default;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "script"
+}

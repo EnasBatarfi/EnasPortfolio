@@ -1,0 +1,19 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/contact/AddressImg": "pages/contact/AddressImg.js",
+  "/contact/BlogsImg": "pages/contact/BlogsImg.js",
+  "/contact/ContactComponent": "pages/contact/ContactComponent.js",
+  "/contact/ContactForm": "pages/contact/ContactForm.js",
+  "/education/EducationComponent": "pages/education/EducationComponent.js",
+  "/education/EducationImg": "pages/education/EducationImg.js",
+  "/errors/error404/Error": "pages/errors/error404/Error.js",
+  "/experience/Experience": "pages/experience/Experience.js",
+  "/experience/ExperienceImg": "pages/experience/ExperienceImg.js",
+  "/home/HomeComponent": "pages/home/HomeComponent.js",
+  "/opensource/Opensource": "pages/opensource/Opensource.js",
+  "/projects/Projects": "pages/projects/Projects.js",
+  "/projects/ProjectsImg": "pages/projects/ProjectsImg.js",
+  "/splash/Splash": "pages/splash/Splash.js"
+}

@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import _extends from \"@babel/runtime/helpers/esm/extends\";\nvar __jsx = React.createElement;\nimport React from \"react\";\nimport \"./SocialMedia.css\";\nimport { socialMediaLinks } from \"../../portfolio\";\nimport styled from \"styled-components\";\nconst IconWrapper = styled.span`\n  i {\n    background-color: ${props => props.backgroundColor};\n  }\n  &:hover i {\n    background-color: ${_ref => {\n  let {\n    theme\n  } = _ref;\n  return theme.text;\n}};\n    transition: 0.3s ease-in;\n  }\n`;\nexport default function socialMedia(props) {\n  return __jsx(\"div\", {\n    className: \"social-media-div\"\n  }, socialMediaLinks.map((media, i) => {\n    return __jsx(\"a\", {\n      key: i,\n      href: media.link,\n      className: `icon-button`,\n      target: \"_blank\",\n      rel: \"noopener noreferrer\"\n    }, __jsx(IconWrapper, _extends({}, media, props), __jsx(\"i\", {\n      className: `fab ${media.fontAwesomeIcon}`\n    })));\n  }));\n}",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

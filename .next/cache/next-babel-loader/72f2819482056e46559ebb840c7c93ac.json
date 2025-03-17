@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React, { Component } from \"react\";\nimport Header from \"../../components/header/Header\";\nimport Greeting from \"../../containers/greeting/Greeting\";\nimport Education from \"../education/EducationComponent\";\nimport Experience from \"../experience/Experience\";\nimport Projects from \"../projects/Projects\";\nimport Contact from \"../contact/ContactComponent\";\nimport Skills from \"../../containers/skills/Skills\";\nimport Footer from \"../../components/footer/Footer\";\nimport TopButton from \"../../components/topButton/TopButton\";\nimport NewSkills from \"../../containers/skills/NewSkills\";\nclass Home extends Component {\n  render() {\n    return __jsx(\"div\", null, __jsx(Header, {\n      theme: this.props.theme\n    }), __jsx(Greeting, {\n      theme: this.props.theme\n    }), __jsx(Skills, {\n      theme: this.props.theme\n    }), __jsx(NewSkills, {\n      theme: this.props.theme\n    }), __jsx(Experience, {\n      theme: this.props.theme\n    }), __jsx(Education, {\n      theme: this.props.theme\n    }), __jsx(Projects, {\n      theme: this.props.theme\n    }), __jsx(Contact, {\n      theme: this.props.theme\n    }), __jsx(Footer, {\n      theme: this.props.theme\n    }), __jsx(TopButton, {\n      theme: this.props.theme\n    }));\n  }\n}\nexport default Home;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

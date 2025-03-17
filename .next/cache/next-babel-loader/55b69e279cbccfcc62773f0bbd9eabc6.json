@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from \"react\";\nimport \"./SoftwareSkill.css\";\nimport { OverlayTrigger, Tooltip } from \"react-bootstrap\";\nclass SoftwareSkill extends React.Component {\n  render() {\n    return __jsx(\"div\", null, __jsx(\"div\", {\n      className: \"software-skills-main-div\"\n    }, __jsx(\"ul\", {\n      className: \"dev-icons\"\n    }, this.props.logos.map(logo => {\n      return __jsx(OverlayTrigger, {\n        key: logo.skillName,\n        placement: \"top\",\n        overlay: __jsx(Tooltip, {\n          id: `tooltip-top`\n        }, __jsx(\"strong\", null, logo.skillName))\n      }, __jsx(\"li\", {\n        className: \"software-skill-inline\",\n        name: logo.skillName\n      }, logo.fontAwesomeClassname && __jsx(\"span\", {\n        className: \"iconify\",\n        \"data-icon\": logo.fontAwesomeClassname,\n        style: logo.style,\n        \"data-inline\": \"false\"\n      }), !logo.fontAwesomeClassname && logo.imageSrc && __jsx(\"img\", {\n        className: \"skill-image\",\n        style: logo.style,\n        src: `${process.env.PUBLIC_URL}/skills/${logo.imageSrc}`,\n        alt: logo.skillName\n      })));\n    }))));\n  }\n}\nexport default SoftwareSkill;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

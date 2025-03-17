@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "basePath": "",
+  "dataRoutes": [],
+  "dynamicRoutes": [],
+  "headers": [],
+  "pages404": true,
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "rewrites": []
+}

@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from \"react\";\nimport \"./Skills.css\";\nimport SkillSection from \"./SkillSection\";\nimport { Fade } from \"react-reveal\";\nexport default function Skills(props) {\n  const theme = props.theme;\n  return __jsx(\"div\", {\n    className: \"main\",\n    id: \"skills\"\n  }, __jsx(\"div\", {\n    className: \"skills-header-div\"\n  }, __jsx(Fade, {\n    bottom: true,\n    duration: 2000,\n    distance: \"20px\"\n  }, __jsx(\"h1\", {\n    className: \"skills-header\",\n    style: {\n      color: theme.text\n    }\n  }, \"What I Do?\"))), __jsx(SkillSection, {\n    theme: theme\n  }));\n}",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}
