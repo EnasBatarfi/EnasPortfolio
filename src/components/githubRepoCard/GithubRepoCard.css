@@ -1,0 +1,135 @@
+.repo-card-div {
+  color: rgb(88, 96, 105);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 30px -15px; /* Softer and smoother shadow */
+  border-radius: 10px; /* Rounded corners for a more modern look */
+  padding: 1.5rem; /* Slightly reduced padding for a more compact design */
+  cursor: pointer;
+  flex: 1 1 25%;
+  height: 250px; /* Adjusted height for a more balanced design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for hover effects */
+  background-color: #ffffff; /* White background for a clean look */
+  border: 1px solid #f0f0f0; /* Subtle border for separation */
+}
+
+.repo-card-div:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px -15px; /* More prominent shadow on hover */
+}
+
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: rgb(106, 115, 125);
+}
+
+.repo-left-stat {
+  display: flex;
+  align-items: center;
+}
+
+.language-color {
+  width: 12px; /* Slightly larger for better visibility */
+  height: 12px;
+  background-color: blue;
+  margin-right: 0.25rem;
+  border-radius: 100%;
+}
+
+.repo-left-stat span {
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+
+.repo-name-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.repo-svg {
+  margin-right: 0.5rem;
+  min-width: 16px;
+}
+
+.repo-name {
+  color: rgb(36, 41, 46);
+  font-family: "Google Sans Regular";
+  font-size: 22px; /* Slightly smaller for better fitting */
+  font-weight: 600; /* Slightly lighter for better readability */
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  margin: 0;
+  overflow: hidden;
+}
+
+.repo-star-svg {
+  margin-right: 0.3rem;
+}
+
+.repo-description {
+  text-align: left;
+  display: -webkit-box;
+  font-family: "Google Sans Regular";
+  -webkit-line-clamp: 3; /* Increased line-clamp to show a better portion of the description */
+  -webkit-box-orient: vertical;
+  margin-top: 0.8rem;
+  font-size: 14px;
+  color: rgb(88, 96, 105);
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.repo-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem; /* Added margin for spacing */
+}
+
+.repo-creation-date {
+  margin: 0;
+  font-family: "Google Sans Regular";
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(106, 115, 125);
+}
+
+.repo-languages {
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .repo-card-div {
+    flex: 1 1 40%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .repo-card-div {
+    flex: 1 1 100%;
+    height: auto;
+  }
+
+  .repo-name {
+    font-size: 18px;
+  }
+
+  .repo-description {
+    font-size: 13px;
+  }
+
+  .repo-details {
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  .repo-creation-date {
+    font-size: 13px;
+  }
+}

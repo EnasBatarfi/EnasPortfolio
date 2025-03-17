@@ -1,0 +1,78 @@
+/* NewSkills.css */
+
+/* Styling for the NewSkills component container */
+.new-skills-container {
+  padding: 50px 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title styling */
+.new-skills-title {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Skills grid container */
+.new-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.new-skills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+  flex-shrink: 0;
+  max-width: 150px;
+}
+
+.new-skills-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.new-skills-item p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1380px */
+@media (max-width: 1380px) {
+  .new-skills-title {
+    font-size: 40px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .new-skills-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .new-skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .new-skills-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .new-skills-item p {
+    font-size: 14px;
+  }
+}
