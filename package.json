@@ -2,7 +2,7 @@
   "private": true,
   "name": "enas-batarfi",
   "version": "0.1.0",
-  "homepage": "https://EnasBatarfi.github.io/EnasPortfolio",
+  "homepage": "https://enasbatarfi.github.io/EnasPortfolio/",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
