@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Enas Batarfi Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://enasbatarfi.github.io/EnasPortfolio/",
   },
 };
 
@@ -25,8 +25,8 @@ const greeting = {
   subTitle:
     "Passionate professional focused on creating innovative, data-driven, and software development solutions that transform challenges into scalable, impactful, and sustainable systems.",
   resumeLink:
-    "https://drive.google.com/file/d/1oCy_g10VF65jFx6DDitTEcako3_iT8QB/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+    "https://drive.google.com/file/d/1IzKx-TQf1L7N8adNA4zikhO15ek3OaE4/view?usp=sharing",
+  portfolio_repository: "https://github.com/EnasBatarfi/EnasPortfolio",
   githubProfile: "https://github.com/EnasBatarfi",
 };
 
