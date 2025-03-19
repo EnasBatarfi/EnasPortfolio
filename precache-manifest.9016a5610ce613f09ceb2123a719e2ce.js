@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6de2306a4dd33e8c008129e08b2a6516",
+    "revision": "dd5bc195a476a114ea25475bb30f7570",
     "url": "/EnasPortfolio/index.html"
   },
   {
-    "revision": "6067026d839b01c51320",
-    "url": "/EnasPortfolio/static/css/main.3217e154.chunk.css"
+    "revision": "6038f9974beeb43f06d3",
+    "url": "/EnasPortfolio/static/css/main.40211341.chunk.css"
   },
   {
-    "revision": "d0cac9ac54a3f8e8ec2c",
-    "url": "/EnasPortfolio/static/js/2.79077d5b.chunk.js"
+    "revision": "8807fdfda59b9471872a",
+    "url": "/EnasPortfolio/static/js/2.03edf30f.chunk.js"
   },
   {
-    "revision": "6067026d839b01c51320",
-    "url": "/EnasPortfolio/static/js/main.579eed22.chunk.js"
+    "revision": "6038f9974beeb43f06d3",
+    "url": "/EnasPortfolio/static/js/main.11f237ca.chunk.js"
   },
   {
     "revision": "407f422f54ae96eaf055",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EnasPortfolio/static/media/Montserrat-Regular.ee653992.ttf"
   },
   {
+    "revision": "2526de698f5f6d380b3d702c636c610c",
+    "url": "/EnasPortfolio/static/media/Saudi-Aramco-Logo.2526de69.png"
+  },
+  {
     "revision": "16559172ca1d4d552390b48f19e102ba",
     "url": "/EnasPortfolio/static/media/address_image.16559172.svg"
   },
@@ -106,6 +110,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d25a6bf340e6a99a7491f088f89cf43",
     "url": "/EnasPortfolio/static/media/aramco.8d25a6bf.png"
+  },
+  {
+    "revision": "d0483e6375396eb493ea9283420a10e2",
+    "url": "/EnasPortfolio/static/media/aramco2.d0483e63.png"
   },
   {
     "revision": "b7f09ee2045ad700ccba4102f2e4155e",

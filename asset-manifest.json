@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/EnasPortfolio/static/css/main.3217e154.chunk.css",
-    "main.js": "/EnasPortfolio/static/js/main.579eed22.chunk.js",
-    "main.js.map": "/EnasPortfolio/static/js/main.579eed22.chunk.js.map",
+    "main.css": "/EnasPortfolio/static/css/main.40211341.chunk.css",
+    "main.js": "/EnasPortfolio/static/js/main.11f237ca.chunk.js",
+    "main.js.map": "/EnasPortfolio/static/js/main.11f237ca.chunk.js.map",
     "runtime-main.js": "/EnasPortfolio/static/js/runtime-main.c152f2a8.js",
     "runtime-main.js.map": "/EnasPortfolio/static/js/runtime-main.c152f2a8.js.map",
-    "static/js/2.79077d5b.chunk.js": "/EnasPortfolio/static/js/2.79077d5b.chunk.js",
-    "static/js/2.79077d5b.chunk.js.map": "/EnasPortfolio/static/js/2.79077d5b.chunk.js.map",
+    "static/js/2.03edf30f.chunk.js": "/EnasPortfolio/static/js/2.03edf30f.chunk.js",
+    "static/js/2.03edf30f.chunk.js.map": "/EnasPortfolio/static/js/2.03edf30f.chunk.js.map",
     "index.html": "/EnasPortfolio/index.html",
-    "precache-manifest.f4e259265e03902ba6284006977bfb2c.js": "/EnasPortfolio/precache-manifest.f4e259265e03902ba6284006977bfb2c.js",
+    "precache-manifest.9016a5610ce613f09ceb2123a719e2ce.js": "/EnasPortfolio/precache-manifest.9016a5610ce613f09ceb2123a719e2ce.js",
     "service-worker.js": "/EnasPortfolio/service-worker.js",
-    "static/css/main.3217e154.chunk.css.map": "/EnasPortfolio/static/css/main.3217e154.chunk.css.map",
+    "static/css/main.40211341.chunk.css.map": "/EnasPortfolio/static/css/main.40211341.chunk.css.map",
     "static/media/index.css": "/EnasPortfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Flask.svg": "/EnasPortfolio/static/media/Flask.318c795b.svg",
     "static/media/IPA.png": "/EnasPortfolio/static/media/IPA.8b8b2c79.png",
@@ -18,6 +18,7 @@
     "static/media/KAU.svg": "/EnasPortfolio/static/media/KAU.c51e4fa4.svg",
     "static/media/KAUST.png": "/EnasPortfolio/static/media/KAUST.0a9fcf6b.png",
     "static/media/Mc.png": "/EnasPortfolio/static/media/Mc.6ae50d7b.png",
+    "static/media/Saudi-Aramco-Logo.png": "/EnasPortfolio/static/media/Saudi-Aramco-Logo.2526de69.png",
     "static/media/address_image.svg": "/EnasPortfolio/static/media/address_image.16559172.svg",
     "static/media/adobe-xd.svg": "/EnasPortfolio/static/media/adobe-xd.0ee1cc59.svg",
     "static/media/adobeaudition.svg": "/EnasPortfolio/static/media/adobeaudition.58f3d81d.svg",
@@ -26,6 +27,7 @@
     "static/media/animated_ashutosh.png": "/EnasPortfolio/static/media/animated_ashutosh.eaf02c2d.png",
     "static/media/animated_logo.svg": "/EnasPortfolio/static/media/animated_logo.dcd6dee2.svg",
     "static/media/aramco.png": "/EnasPortfolio/static/media/aramco.8d25a6bf.png",
+    "static/media/aramco2.png": "/EnasPortfolio/static/media/aramco2.d0483e63.png",
     "static/media/aws.svg": "/EnasPortfolio/static/media/aws.b7f09ee2.svg",
     "static/media/azure.svg": "/EnasPortfolio/static/media/azure.f548d3f1.svg",
     "static/media/blender.svg": "/EnasPortfolio/static/media/blender.8b61b044.svg",
@@ -144,8 +146,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c152f2a8.js",
-    "static/js/2.79077d5b.chunk.js",
-    "static/css/main.3217e154.chunk.css",
-    "static/js/main.579eed22.chunk.js"
+    "static/js/2.03edf30f.chunk.js",
+    "static/css/main.40211341.chunk.css",
+    "static/js/main.11f237ca.chunk.js"
   ]
 }
