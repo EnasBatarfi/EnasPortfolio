@@ -8,4 +8,5 @@
   outline: none;
   border-radius: 2rem;
   font-size: 1.5rem;
+  z-index: 9999;
 }

@@ -395,9 +395,10 @@ const degrees = {
       alt_name: "King Abdulaziz University",
       duration: "2018 - 2023",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ Specialized in Artificial Intelligence (AI) and Cybersecurity, with minors in both fields.",
+        "⚡ Strong foundation in Object-Oriented Programming (OOP), Database Design, and Java.",
+        "⚡ Developed a graduation project integrating an AI model with both frontend and backend technologies, demonstrating expertise in full-stack development.",
+        "⚡ Gained experience in networks and operating systems, applying concepts in software engineering.",
       ],
       website_link: "https://www.kau.edu.sa/home_english.aspx",
     },
@@ -565,7 +566,7 @@ const experience = {
           title: "Computer Science Intern",
           company: "Saudi Aramco",
           company_url: "https://www.aramco.com/",
-          logo_path: "aramco.png",
+          logo_path: "aramco2.png",
           duration: "Jul 2023 – Aug 2023",
           location: "Dhahran, Kingdom of Saudi Arabia",
           description:
@@ -707,7 +708,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "animated_ashutosh.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "Don’t hesitate to get in touch for collaboration on AI, Data Science, or Full-Stack development projects. I look forward to connecting and discussing potential opportunities! ❤️",
   },
   blogSection: {
     title: "Blogs",
