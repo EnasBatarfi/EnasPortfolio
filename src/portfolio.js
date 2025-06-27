@@ -25,7 +25,11 @@ const greeting = {
   subTitle:
     "Passionate professional focused on creating innovative, data-driven, and software development solutions that transform challenges into scalable, impactful, and sustainable systems.",
   resumeLink:
+    "https://drive.google.c<<<<<<< HEAD
     "https://drive.google.com/file/d/1IzKx-TQf1L7N8adNA4zikhO15ek3OaE4/view?usp=sharing",
+=======
+    "https://drive.google.com/file/d/1BX068fo7jMubRiu7H4TBE0bD4h8Cy6O-/view",
+>>>>>>> 905f1b2 (edit cv url)
   portfolio_repository: "https://github.com/EnasBatarfi/EnasPortfolio",
   githubProfile: "https://github.com/EnasBatarfi",
 };
@@ -515,22 +519,12 @@ const experience = {
       experiences: [
         {
           title: "Training Assistant",
+<<<<<<< HEAD
           company: "Institution of Public Administration (IPA)",
-          company_url: "https://www.ipa.edu.sa/",
-          logo_path: "IPA.png",
-          duration: "Jun 2024 – Present",
-          location: "Riyadh, Kingdom of Saudi Arabia",
-          description:
-            "As part of a rotational program, I gained hands-on experience across various departments, supporting both training and administrative functions. I helped review and audit question banks to ensure the quality and accuracy of training materials. I also implemented AI tools for grammar and spell-checking to enhance those materials. Additionally,  I contributed to the development data-driven dashboards using Qlik Sense, HTML, CSS, and JavaScript to help visualize key insights.",
-          color: "#000000",
-        },
-        {
-          title: "Software Developer",
-          company: "Information & Software Co., Ltd.",
-          company_url: "https://infosoft.com.sa/en/",
-          logo_path: "Infosoft.png",
-          duration: "Oct 2023 – Nov 2023",
-          location: "Jeddah, Kingdom of Saudi Arabia",
+=======
+          company: "Institute of Public Administration (IPA)",
+>>>>>>> 905f1b2 (edit cv url)
+f Saudi Arabia",
           description:
             "I conducted thorough software testing to improve system efficiency. In addition, I analyzed e-invoice systems to ensure compliance with ZATCA standards. This allowed me to contribute to refining the application design, optimizing its overall functionality.",
           color: "#0879bf",
