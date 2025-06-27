@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Passionate professional focused on creating innovative, data-driven, and software development solutions that transform challenges into scalable, impactful, and sustainable systems.",
   resumeLink:
-    "https://drive.google.com/file/d/1IzKx-TQf1L7N8adNA4zikhO15ek3OaE4/view?usp=sharing",
+    "https://drive.google.com/file/d/1BX068fo7jMubRiu7H4TBE0bD4h8Cy6O-/view",
   portfolio_repository: "https://github.com/EnasBatarfi/EnasPortfolio",
   githubProfile: "https://github.com/EnasBatarfi",
 };
@@ -515,9 +515,7 @@ const experience = {
       experiences: [
         {
           title: "Training Assistant",
-          company: "Institution of Public Administration (IPA)",
->>> 905f1b2 (edit cv url)
-f Saudi Arabia",
+          company: "Institute of Public Administration (IPA)",
           description:
             "I conducted thorough software testing to improve system efficiency. In addition, I analyzed e-invoice systems to ensure compliance with ZATCA standards. This allowed me to contribute to refining the application design, optimizing its overall functionality.",
           color: "#0879bf",
