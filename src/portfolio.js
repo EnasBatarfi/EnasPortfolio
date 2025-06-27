@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Passionate professional focused on creating innovative, data-driven, and software development solutions that transform challenges into scalable, impactful, and sustainable systems.",
   resumeLink:
-    "https://drive.google.com/file/d/1IzKx-TQf1L7N8adNA4zikhO15ek3OaE4/view?usp=sharing",
+    "https://drive.google.com/file/d/1BX068fo7jMubRiu7H4TBE0bD4h8Cy6O-/view",
   portfolio_repository: "https://github.com/EnasBatarfi/EnasPortfolio",
   githubProfile: "https://github.com/EnasBatarfi",
 };
@@ -515,7 +515,7 @@ const experience = {
       experiences: [
         {
           title: "Training Assistant",
-          company: "Institution of Public Administration (IPA)",
+          company: "Institute of Public Administration (IPA)",
           company_url: "https://www.ipa.edu.sa/",
           logo_path: "IPA.png",
           duration: "Jun 2024 – Present",
