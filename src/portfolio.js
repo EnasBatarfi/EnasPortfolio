@@ -518,7 +518,7 @@ const experience = {
           company: "Institute of Public Administration (IPA)",
           company_url: "https://www.ipa.edu.sa/",
           logo_path: "IPA.png",
-          duration: "Jun 2024 – Present",
+          duration: "May 2024 – Present",
           location: "Riyadh, Kingdom of Saudi Arabia",
           description:
             "As part of a rotational program, I gained hands-on experience across various departments, supporting both training and administrative functions. I helped review and audit question banks to ensure the quality and accuracy of training materials. I also implemented AI tools for grammar and spell-checking to enhance those materials. Additionally,  I contributed to the development data-driven dashboards using Qlik Sense, HTML, CSS, and JavaScript to help visualize key insights.",
